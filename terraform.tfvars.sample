@@ -1,0 +1,37 @@
+# Azure Subscription ID
+subscription_id = "fill in azure subscription id"
+
+# Azure Client ID
+client_id       = "fill in azure client id"
+
+# Azure Client Secret
+client_secret   = "fill in azure client secret"
+
+# Azure Tenant ID
+tenant_id       = "fill in azure tenant id"
+
+# Azure region
+location        = "West Europe"
+
+# Default admin username for each VM
+vm_username = "demoadmin"
+
+# Default admin password for each VM
+vm_password = "Passw0rd#NobodyKnows"
+
+# AD Domain Name with gets provisioned on the Domain Controller VM
+dns_domain_name = "mydomain.local"
+
+# AD Netbios Name with gets provisioned on the Domain Controller VM
+domain_netbios_name = "MYDOMAIN"
+
+# Number of test environments. Each environment gets its own resource group in azure
+instance_count = 3
+
+# each azure resource is prefixed with this value, only for organizing things
+prefix = "devicetrust"
+
+# each azure resource gets a tag, only for organizing things
+tags = {
+    environment = "devicetrust"
+}

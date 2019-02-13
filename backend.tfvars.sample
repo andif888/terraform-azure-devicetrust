@@ -1,0 +1,9 @@
+resource_group_name = "tfstate_resources"
+
+storage_account_name = "terramyappbackend"
+
+container_name = "tfstatebackend"
+
+access_key = "p1EvkRL5ILVMQhIx7OP6q738EL7=="
+
+key = "terramyapp.tfstate"

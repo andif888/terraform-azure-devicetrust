@@ -1,0 +1,23 @@
+[windows]
+192.168.8.10
+192.168.8.11
+192.168.8.12
+192.168.8.13
+
+[windows-members]
+192.168.8.11 hostname=RDSH
+192.168.8.12 hostname=CLIENT
+
+[windows-dc]
+192.168.8.10 hostname=DC
+
+[windows-rdsh]
+192.168.8.11
+
+[windows-client]
+192.168.8.12
+
+[windows-byod]
+192.168.8.13 hostname=BYOD
+
+

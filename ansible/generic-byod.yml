@@ -1,0 +1,17 @@
+---
+- hosts: windows-byod
+
+  vars_files:
+    - vars/generic.yml
+
+  roles:
+    - { role: ansible-role-win-disable-windows-updates }
+    - { role: ansible-role-win-language }
+    - { role: ansible-role-win-hostname }
+
+  tasks:
+    - name: DNS Client
+      win_dns_client:
+        adapter_names: "{{ dns_client_adapter }}"
+        ipv4_addresses: "{{ dns_client_dns_server_ip }}"
+      when: dns_client_configure
