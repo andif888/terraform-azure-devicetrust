@@ -8,8 +8,8 @@ It spins up the following VMs:
 - BYOD - Windows 10 Client without domain join
 
 ## Requirements 
-You need Terraform installed and a Azure Subscription.
-To install Terraform please checkout https://www.terraform.io/downloads.html  
+You need a Azure Subscription. If you have for example a Windows Azure MSDN Subscription you can easily use this. Running it for some hours cost only a few cents.  
+You need Terraform installed. To install Terraform please checkout https://www.terraform.io/downloads.html  
 
 You need a azure storage account, which is used to save the `terraform.tfstate` offsite in Azure. 
 You can use [backend_az_storage.sh](backend_az_storage.sh) as starting point to create an Azure storage account using Azure CLI. For further information see https://docs.microsoft.com/en-us/azure/terraform/terraform-backend

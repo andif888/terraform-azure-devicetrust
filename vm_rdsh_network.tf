@@ -5,6 +5,7 @@ resource "azurerm_public_ip" "vm_rdsh" {
   resource_group_name  = "${element(azurerm_resource_group.main.*.name, count.index)}"
   allocation_method    = "Static"
   tags                 = "${var.tags}"
+  domain_name_label    = "${var.prefix}-rdsh-${count.index}"
 }
 
 resource "azurerm_network_interface" "vm_rdsh" {

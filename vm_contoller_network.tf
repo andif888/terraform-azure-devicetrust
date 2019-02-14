@@ -5,6 +5,7 @@ resource "azurerm_public_ip" "vm_controller" {
   resource_group_name  = "${element(azurerm_resource_group.main.*.name, count.index)}"
   allocation_method    = "Static"
   tags                 = "${var.tags}"
+  domain_name_label    = "${var.prefix}-ctrl-${count.index}"
 }
 
 resource "azurerm_network_interface" "vm_controller" {
