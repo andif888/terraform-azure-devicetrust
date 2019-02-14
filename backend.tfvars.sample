@@ -1,9 +1,14 @@
+# Name of the resource group in Azure
 resource_group_name = "tfstate_resources"
 
+# Name of the storage account
 storage_account_name = "terramyappbackend"
 
+# Name of the storage container
 container_name = "tfstatebackend"
 
+# Access Key
 access_key = "p1EvkRL5ILVMQhIx7OP6q738EL7=="
 
+# File name to be used for thr terraform state file
 key = "terramyapp.tfstate"

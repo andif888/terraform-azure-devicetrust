@@ -1,13 +1,37 @@
-# Azure Subscription ID
-subscription_id = "fill in azure subscription id"
+# If you don't have those details yet available then you need to register a new APP in Azure AD
+# Checkout "creating a Service Principal in the Azure Portal"
+# https://www.terraform.io/docs/providers/azurerm/auth/service_principal_client_secret.html
 
-# Azure Client ID
+# Azure Active Directory -> App registrations
+# Enter some name
+# Select Web app/API as Alication type
+# Enter any Sign-on URL
+
+# The shown Application ID is th client_id
+# When created the App registration, click Settings -> Keys
+# Enter a description for the key's password and hit save.
+# After save the key value is displayed. Take a note of it.
+
+# In Azure Portal go to Cost Management + Billing and click on your Subcription.
+# In the subscription click Access controll (IAM)
+# Klick "Add a role assignment"
+# As role select "Contributor"
+# Assign access to Azure AD user, group or service Principal
+# In the "Select" search for the previously created registered App.
+# Hit save.
+
+
+
+# Azure Client ID. This is the Application ID of the registered App in Azure Portal
 client_id       = "fill in azure client id"
 
-# Azure Client Secret
+# Azure Client Secret. This is the key's password value of the registered App in the Azure Portal
 client_secret   = "fill in azure client secret"
 
-# Azure Tenant ID
+# Azure Subscription ID. In Azure Portal click Cost Management + Billing. Here you find your asigned Subscription ID
+subscription_id = "fill in azure subscription id"
+
+# Azure Tenant ID. In Azure Portal click Azure Active Directory -> Properties an note th Directory ID
 tenant_id       = "fill in azure tenant id"
 
 # Azure region
