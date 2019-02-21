@@ -4,20 +4,20 @@
 
 # Azure Active Directory -> App registrations
 # Enter some name
-# Select Web app/API as Alication type
+# Select Web app/API as Application type
 # Enter any Sign-on URL
 
-# The shown Application ID is th client_id
+# The shown Application ID is the client_id
 # When created the App registration, click Settings -> Keys
 # Enter a description for the key's password and hit save.
-# After save the key value is displayed. Take a note of it.
+# After saving the key the value is displayed. Take a note of it.
 
 # In Azure Portal go to Cost Management + Billing and click on your Subcription.
-# In the subscription click Access controll (IAM)
-# Klick "Add a role assignment"
+# In the subscription click Access control (IAM)
+# Click "Add a role assignment"
 # As role select "Contributor"
 # Assign access to Azure AD user, group or service Principal
-# In the "Select" search for the previously created registered App.
+# In the "Select" field search for the previously created registered App.
 # Hit save.
 
 
