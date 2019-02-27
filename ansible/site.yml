@@ -4,6 +4,7 @@
 - import_playbook: generic-rdsh.yml
 - import_playbook: generic-byod.yml
 
+- import_playbook: deviceTRUST-training.yml
 - import_playbook: deviceTRUST-dc.yml
 - import_playbook: deviceTRUST-rdsh.yml
 - import_playbook: deviceTRUST-client.yml
