@@ -16,6 +16,7 @@
 
 [windows-client]
 192.168.8.12
+192.168.8.13
 
 [windows-byod]
 192.168.8.13 hostname=BYOD
