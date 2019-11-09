@@ -49,6 +49,7 @@ resource "azurerm_virtual_machine" "vm_controller" {
   }
 
   connection {
+      host = "${element(azurerm_public_ip.vm_controller.*.ip_address, count.index)}"
       type = "ssh"
       user = "${var.vm_username}"
       password = "${var.vm_password}"
